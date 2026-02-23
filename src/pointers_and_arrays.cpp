@@ -32,7 +32,7 @@ void pointersAndArrays() {
 
     std::cout << "Array first element: " << numbers[0] << '\n';
     // TODO: Print the value that 'ptr' points to using the dereference operator (*)
-    std::cout<<"Pointer Points to: "<< *ptr << '\n';
+    std::cout<<"Pointer points to: "<< *ptr << '\n';
     // Expected output: "Pointer points to: 10"
     //
     // ! DISCUSSION: Why *ptr and not ptr?
@@ -53,7 +53,7 @@ void pointersAndArrays() {
 
     // TODO: Print the address of numbers[0] using the address-of operator (&)
     // Expected output: "Address of numbers[0]: <some address>"
-    std::cout<<"Address of number[0]: "<<&numbers[0] << '\n';
+    std::cout<<"Address of numbers[0]: "<<&numbers[0] << '\n';
 
     // TODO: Print the address of numbers[1] using the address-of operator (&)
     // Expected output: "Address of numbers[1]: <some address>"
@@ -92,7 +92,7 @@ void pointersAndArrays() {
 
     // TODO: Print the value of 'value' by dereferencing 'pValue'
     // Expected output: "Dereferenced value: 42"
-    std::cout<<"Dereferenced"<<*pValue<<'\n';
+    std::cout<<"Dereferenced value:"<<*pValue<<'\n';
     *pValue = 99;
     // TODO: Change 'value' through the pointer by assigning 99 to *pValue
     //
@@ -105,7 +105,7 @@ void pointersAndArrays() {
     std::cout << "After modification through pointer:" << '\n';
     // TODO: Print 'value' directly to show it changed
     // Expected output: "value is now: 99"
-    std::cout<<"value = "<<value<<'\n';
+    std::cout<<"value is now: "<<value<<'\n';
 
     // --- 4. Pointer arithmetic ---
     // ? SEE DIAGRAM: images/array_in_memory.png — shows pointer arithmetic on the array
@@ -126,10 +126,10 @@ void pointersAndArrays() {
     //   Pointer arithmetic is type-aware. start is an int*, so +1 advances
     //   by sizeof(int) = 4 bytes, landing exactly on the next int in the array.
     //   The compiler handles the scaling — you think in "elements," not bytes.
-    std::cout<<"start+1 points to: " << *(start + 1) << '\n';
+    std::cout<<"start + 1 points to: " << *(start + 1) << '\n';
     // TODO: Use pointer arithmetic (start + 3) to print the fourth element
     // Expected output: "start + 3 points to: 40"
-    std:: cout<<"start+3 points to: " << *(start + 3) << '\n';
+    std:: cout<<"start + 3 points to: " << *(start + 3) << '\n';
     // TODO: Create a pointer 'end' that points to the last element using pointer arithmetic
     //
     // ! DISCUSSION: Why size - 1 and not just size?
@@ -145,7 +145,7 @@ void pointersAndArrays() {
     std::cout<<"Walking with pointer: ";
     for (int* p= numbers; p<numbers+size; ++p)
     {
-        std::cout<<*p<<"";
+        std::cout<< *p <<" ";
     }
     // ! DISCUSSION: Why p < numbers + size and not p <= numbers + size?
     //   numbers + size points to one-past-the-end — reading from that

@@ -26,7 +26,7 @@ void pointersAsArrays() {
     // TODO: Print ptr[0] to show that a pointer can use [] just like an array
     // Expected output: "Pointer access: ptr[0] = 100"
     //
-    std::cout << "Pointer access:   ptr[0] = " << ptr[0] << '\n';
+    std::cout << "Pointer access: ptr[0] = " << ptr[0] << '\n';
     // ! DISCUSSION: How can a pointer use [] like an array?
     //   The [] operator is defined for pointers: ptr[i] is just a shorthand
     //   for *(ptr + i). The compiler rewrites it to pointer arithmetic.
@@ -34,11 +34,11 @@ void pointersAsArrays() {
 
     // TODO: Print ptr[2] to access the third element through the pointer
     // Expected output: "Pointer access: ptr[2] = 300"
-    std::cout << "Pointer access:   ptr[2] = " << ptr[2] << '\n';
+    std::cout << "Pointer access: ptr[2] = " << ptr[2] << '\n';
     // TODO: Print ptr[4] to access the last element through the pointer
     // Expected output: "Pointer access: ptr[4] = 500"
     //
-    std::cout<<"Pointer access:   ptr[4] = " << ptr[4] << '\n';
+    std::cout<<"Pointer access: ptr[4] = " << ptr[4] << '\n';
     // ! DISCUSSION: What happens if you do ptr[5] or ptr[100]?
     //   No compile error! C++ does NOT check array bounds. ptr[5] reads
     //   whatever happens to be in memory after the array — this is
