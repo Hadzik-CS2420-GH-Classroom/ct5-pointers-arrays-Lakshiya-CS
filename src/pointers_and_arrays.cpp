@@ -92,7 +92,7 @@ void pointersAndArrays() {
 
     // TODO: Print the value of 'value' by dereferencing 'pValue'
     // Expected output: "Dereferenced value: 42"
-    std::cout<<"Dereferenced value:"<<*pValue<<'\n';
+    std::cout<<"Dereferenced value: "<<*pValue<<'\n';
     *pValue = 99;
     // TODO: Change 'value' through the pointer by assigning 99 to *pValue
     //
